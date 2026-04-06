@@ -1,13 +1,17 @@
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Cars from './components/Cars'
+import Footer from './components/Footer'
+import './App.css'
 
 const App = () => {
-  const value = 0;
   return (
     <>
-    <div></div>
-    <h1></h1>
-    <Navbar/>
+      <Navbar />
+      <Hero />
+      <Cars />
+      <Footer />
     </>
   )
 }
