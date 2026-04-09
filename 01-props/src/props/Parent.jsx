@@ -3,10 +3,14 @@ import Child from './Child';
 
 const Parent = () => {
     const fullname="Vishal";
+
+    function Alert(){
+      alert("Kyo Kiya Click")
+    }
   return (
     <>
     <div>Parent</div>
-    <Child name={fullname}/>
+    <Child name={fullname} alert={Alert}/>
     </>
   )
 }
