@@ -15,11 +15,11 @@ const UseStateone = () => {
     }
   return (
     <>
-    <div>UseStateone</div>
+    <div><h1>UseStateone</h1></div>
     <h1>Count:{count}</h1>
-    <button onClick={increase}>+</button>
-    <button onClick={increase}>-</button>
-    <button onClick={increase}>reset</button>
+    <button id='Button' onClick={increase}>+</button>
+    <button id='Button' onClick={decrease}>-</button>
+    <button  id='Button'onClick={reset}>reset</button>
     </>
   )
 }
