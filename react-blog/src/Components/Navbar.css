@@ -1,0 +1,73 @@
+nav {
+  display: flex;
+  align-items: center;
+  background: #0d0d0d;
+  border-bottom: 0.5px solid rgba(255,255,255,0.08);
+  padding: 0 4px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'DM Mono', monospace;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #1D9E75, #5DCAA5, #1D9E75);
+  background-size: 200% 100%;
+  animation: slide 3s linear infinite;
+}
+
+@keyframes slide {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 14px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.45);
+  text-decoration: none;
+  border-right: 0.5px solid rgba(255,255,255,0.06);
+  position: relative;
+  transition: color 0.2s;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 16px; right: 16px;
+  height: 2px;
+  background: #1D9E75;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+a span.dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: 0.35;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+a:hover { color: #fff; }
+a:hover::after { transform: scaleX(1); }
+a:hover span.dot {
+  opacity: 1;
+  background: #1D9E75;
+}
+
+a.active { color: #fff; }
+a.active::after { transform: scaleX(1); }
+a.active span.dot {
+  opacity: 1;
+  background: #1D9E75;
+}
