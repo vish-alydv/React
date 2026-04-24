@@ -1,0 +1,51 @@
+/* Category Page Common CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main wrapper */
+.category-container {
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Category label (e.g., "Food") */
+.category-label {
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Article card */
+.article-card {
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+/* Title */
+.article-card h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Image */
+.article-card img {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}

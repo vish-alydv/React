@@ -8,6 +8,7 @@ import Fitness from './Components/Fitness'
 import Food from './Components/Food'
 import "./App.css"
 import Navbar from './Components/Navbar'
+import Details from './Components/Details'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path = "/tech" element={<Technology/>}/>
         <Route path = "/fitness" element={<Fitness/>}/>
         <Route path = "/food" element={<Food/>}/>
+        <Route path = '/post/:id' element={<Details/>}/>
       </Routes>
 
 
